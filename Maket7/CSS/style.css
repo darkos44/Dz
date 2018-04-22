@@ -1,0 +1,156 @@
+@font-face {
+    font-family: metropolismedium;
+    src: url(font/metropolis-medium-webfont.woff2) format('woff2'),
+    url(font/metropolis-medium-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Обнуление документа*/
+* {
+    margin:0; padding:0;
+    font-size:inherit;
+    color:inherit;
+    -webkit-font-smoothing: antialiased;
+}
+a {outline:none;
+    text-decoration:none;
+    font-size:11px;
+    color:#2d2a2b ;
+}
+img {border:none;}
+html {
+    height: 100%;
+}
+
+body {
+    height: auto !important;
+    position: relative;
+}
+
+header {
+    background-color: rgba( 89, 89, 89, 0.7);
+    padding: 30px 0 15px;
+    height: content-box;
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    max-height: content-box;
+}
+.logo {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 27px;
+}
+
+.form-header {
+    float: right;
+    max-height: 45px;
+    max-width: ;width: 210px;
+    display:block;
+    margin-right: 20px;
+    background-color: white;
+    padding-left: 5px;
+}
+input {
+    height: 45px;
+    width: 85%;
+    display: inline-block;
+    margin: 0;
+    background:none;
+    border: none;
+    outline:none;
+}
+button {
+    display: inline-block;
+    color: red;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    height: 45px;
+    width: 15%;
+    outline:none;
+    float: right;
+}
+.buttom {
+    height: 25px;
+    width: 120px;
+    padding: 10px 10px;
+    margin: 0 15px;
+    color:white;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: metropolismedium, serif;
+    text-align: center;
+    font-size: 12px;
+}
+
+.buttom i{
+    margin-right: 7px;
+    display: inline-block;
+
+}
+.buttom p {
+
+    display: inline-block;
+}
+.buttom.store {
+    background-color: #252525;
+    float: right;
+
+}
+.buttom.log{
+    background-color: #464646;
+    float: right;
+
+}
+.buttom.sing{
+    background-color: #fa090a;
+    float:right;
+
+}
+.container:after{
+    content: "";
+    clear:both;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #464646;
+    margin-bottom: 25px;
+}
+
+.container1 {
+    max-width: 1300px;
+    margin: auto;
+    max-height: content-box;}
+menu{
+    list-style-type:none;
+    width: 85%;
+    float: left;
+}
+li{
+    display: inline-block;
+    margin: 0 17px;
+    color:white;
+
+}
+.menu {
+    font-family: metropolismedium, arial, serif;
+    font-size: 18px;
+    display: inline-block;
+
+}
+menu a:hover{
+    border-bottom: 2px #fa090a solid;
+
+}
+.soc{
+    width: 25px;
+    height: 23px;
+    padding-top: 2px;
+    margin: 0 10px 0;
+    background-color: #fa090a;
+    text-align: center;
+    float: right;
+}
