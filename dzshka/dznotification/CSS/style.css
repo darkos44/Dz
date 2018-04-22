@@ -1,0 +1,22 @@
+/*Обнуление документа*/
+* {
+     margin:0; padding:0;
+     font-size:inherit;
+     color:inherit;
+     -webkit-font-smoothing: antialiased;
+ }
+button::-moz-focus-inner {padding:0;border:0;}
+a {outline:none;
+    text-decoration:none;
+    font-size:11px;
+    color:#2d2a2b ;
+}
+img {border:none;}
+html {
+    height: 100%;
+}
+
+body {
+    height: auto !important;
+    position: relative;
+}
