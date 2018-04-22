@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Dialog - Animation</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $( "#opener" ).on( "click", function() {
+                $( "#dialog" ).dialog( "open" );
+            });
+        } );
+    </script>
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/popup.css" type="text/css">
+</head>
+<body>
+
+<div id="dialog" title="FORGOT YOUR PASSWORD?">
+   <section>
+       <div class="form">
+           <form name="Reset password" method="post" action="">
+               <div class="ploxo">
+                   <label for="password">ENTER YOUR EMAIL</label>
+                 <input id="password" type="password" name="password" >
+               </div>
+              <button type="reset">RESET PASSWORD</button>
+           </form>
+       </div>
+       <span>OR</span>
+       <a class="facebook" href="#"><span><i class="fa fa-facebook"></i> In Using Facebook</span></a>
+   </section>
+</div>
+
+<button id="opener">Open Dialog</button>
+
+
+</body>
+</html>

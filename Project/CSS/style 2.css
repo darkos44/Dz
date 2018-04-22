@@ -1,0 +1,70 @@
+/*Обнуление документа*/
+* {
+    margin:0; padding:0;
+    font-size:inherit;
+    color:inherit;
+    -webkit-font-smoothing: antialiased;
+}
+button::-moz-focus-inner {padding:0;border:0;}
+a {outline:none;
+    text-decoration:none;
+    font-size:11px;
+    color:#2d2a2b ;
+}
+img {border:none;}
+html {
+    height: 100%;
+}
+
+body {
+    height: auto !important;
+    position: relative;
+}
+article {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.ui-widget-content {
+    background-color: #fef5fa;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    color: #860da6;
+    background-color: #fce7f2;
+    border-radius: 0;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid #fef5fa;
+    background: #fef5fa;
+    color: #860da6;
+    border-radius: 0;
+}
+.ui-accordion .ui-accordion-header {
+    margin-top: 0;
+}
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: url(images/dot.png);
+    margin-bottom:2px;
+    background-position: 0;
+}
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    background-image: url(images/dot.png);
+    margin-bottom:2px ;
+    background-position: 0;
+}
+
+
+.ui-accordion .ui-accordion-header:after{
+    content: ">";
+    position: absolute;
+    right: 20px;
+    color: #000;
+}
+.ui-accordion .ui-accordion-header.ui-state-active:after{
+    content: ">";
+    transform: rotate(90deg);
+    position: absolute;
+    right: 20px;
+    color: #000;
+}
+
