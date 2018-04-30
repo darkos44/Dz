@@ -1,0 +1,12 @@
+
+.spoiler-block {
+    display: none;
+    width: 400px;
+    height: 150px;
+    margin-left: -200px;
+    position: absolute;
+    top: 0;
+    left:50%;
+    background-color: whitesmoke;
+    text-align: center;
+}
